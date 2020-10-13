@@ -31,7 +31,7 @@
 	</div>
 
 	<div class="container">
-		<h2>Statistika</h2>
+		<h2 class="my-4">Statistika</h2>
 		<p>Shifrat e pergjithshme te Koronavirusit ne Shqiperi deri tani.</p>
 
 		<div class="row">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 
-		<h2>Sot</h2>
+		<h2 class="my-4">Sot</h2>
 		<p>Shifrat e sotme te Koronavirusit ne Shqiperi.</p>
 
 		<div class="row">
@@ -112,7 +112,7 @@
 			</div>
 		</div>
 
-		<h2>Te tjera</h2>
+		<h2 class="my-4">Te tjera</h2>
 		<p>Shifrat e te tjera te pergjithshme te Koronavirusit ne Shqiperi.</p>
 
 		<div class="row">
@@ -134,13 +134,13 @@
 			<div class="col">
 				<div class="card shadow-sm">
 					<div class="card-body text-center">
-						<p class="mb-0 lead">Raste Kritike</p>
+						<p class="mb-0 lead text-danger">Raste Kritike</p>
 						{#if data.critical == undefined}
 							<h1 class="mb-0">loading...</h1>
 						{:else if data.critical == 0}
-							<h1 class="mb-0">{data.critical}</h1>
+							<h1 class="mb-0 text-danger">{data.critical}</h1>
 						{:else}
-							<h1 class="mb-0">{data.critical}</h1>
+							<h1 class="mb-0 text-danger">{data.critical}</h1>
 						{/if}
 					</div>
 				</div>
@@ -149,7 +149,7 @@
 			<div class="col">
 				<div class="card shadow-sm">
 					<div class="card-body text-center">
-						<p class="mb-0 lead">Teste Totale</p>
+						<p class="mb-0 lead text-success">Teste Totale</p>
 						{#if data.totalTests == undefined}
 							<h1 class="mb-0">loading...</h1>
 						{:else if data.totalTests == 0}
