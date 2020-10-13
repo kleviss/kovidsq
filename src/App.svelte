@@ -134,13 +134,13 @@
 			<div class="col">
 				<div class="card shadow-sm">
 					<div class="card-body text-center">
-						<p class="mb-0 lead text-danger">Raste Kritike</p>
-						{#if data.critical == undefined}
+						<p class="mb-0 lead text-success">Teste Totale</p>
+						{#if data.totalTests == undefined}
 							<h1 class="mb-0">loading...</h1>
-						{:else if data.critical == 0}
-							<h1 class="mb-0 text-danger">{data.critical}</h1>
+						{:else if data.totalTests == 0}
+							<h1 class="mb-0">{data.totalTests}</h1>
 						{:else}
-							<h1 class="mb-0 text-danger">{data.critical}</h1>
+							<h1 class="mb-0">{data.totalTests}</h1>
 						{/if}
 					</div>
 				</div>
@@ -149,13 +149,13 @@
 			<div class="col">
 				<div class="card shadow-sm">
 					<div class="card-body text-center">
-						<p class="mb-0 lead text-success">Teste Totale</p>
-						{#if data.totalTests == undefined}
+						<p class="mb-0 lead text-danger">Raste Kritike</p>
+						{#if data.critical == undefined}
 							<h1 class="mb-0">loading...</h1>
-						{:else if data.totalTests == 0}
-							<h1 class="mb-0">{data.totalTests}</h1>
+						{:else if data.critical == 0}
+							<h1 class="mb-0 text-danger">{data.critical}</h1>
 						{:else}
-							<h1 class="mb-0">{data.totalTests}</h1>
+							<h1 class="mb-0 text-danger">{data.critical}</h1>
 						{/if}
 					</div>
 				</div>
