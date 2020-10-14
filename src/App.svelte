@@ -40,7 +40,9 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead">Raste</p>
 						{#if data.cases == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div class="spinner-border text-dark" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else}
 							<h1 class="mb-0">{data.cases}</h1>
 						{/if}
@@ -53,7 +55,11 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead">Te Sheruar</p>
 						{#if data.recovered == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div
+								class="spinner-border text-success"
+								role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else}
 							<h1 class="mb-0 text-success">{data.recovered}</h1>
 						{/if}
@@ -66,7 +72,11 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead">Vdekje</p>
 						{#if data.recovered == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div
+								class="spinner-border text-danger"
+								role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else if data.deaths == 0}
 							<h1 class="mb-0 text-success">{data.todayCases}</h1>
 						{:else}
@@ -86,7 +96,11 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead">Raste</p>
 						{#if data.todayCases == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div
+								class="spinner-border text-success"
+								role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else if data.todayCases == 0}
 							<h1 class="mb-0 text-success">{data.todayCases}</h1>
 						{:else}
@@ -101,7 +115,11 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead">Vdekje</p>
 						{#if data.todayDeaths == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div
+								class="spinner-border text-success"
+								role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else if data.todayDeaths == 0}
 							<h1 class="mb-0 text-success">{data.todayCases}</h1>
 						{:else}
@@ -121,7 +139,9 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead">Raste aktive</p>
 						{#if data.active == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div class="spinner-border text-dark" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else if data.active == 0}
 							<h1 class="mb-0">{data.active}</h1>
 						{:else}
@@ -136,7 +156,9 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead text-success">Teste Totale</p>
 						{#if data.totalTests == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div class="spinner-border text-dark" role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else if data.totalTests == 0}
 							<h1 class="mb-0">{data.totalTests}</h1>
 						{:else}
@@ -151,7 +173,11 @@
 					<div class="card-body text-center">
 						<p class="mb-0 lead text-danger">Raste Kritike</p>
 						{#if data.critical == undefined}
-							<h1 class="mb-0">loading...</h1>
+							<div
+								class="spinner-border text-danger"
+								role="status">
+								<span class="sr-only">Loading...</span>
+							</div>
 						{:else if data.critical == 0}
 							<h1 class="mb-0 text-danger">{data.critical}</h1>
 						{:else}
