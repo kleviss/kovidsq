@@ -195,6 +195,7 @@
 			<a
 				href="https://www.linkedin.com/in/klevis-xhyra/"
 				target="_blank">klev_s</a>
+			<3
 		</p>
 
 		<p>
