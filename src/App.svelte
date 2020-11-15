@@ -196,5 +196,12 @@
 				href="https://www.linkedin.com/in/klevis-xhyra/"
 				target="_blank">klev_s</a>
 		</p>
+
+		<p>
+			Tutoriali nga
+			<a
+				href="https://sputnik.al/"
+				target="_blank">sputnik.al</a>
+		</p>
 	</div>
 </main>
